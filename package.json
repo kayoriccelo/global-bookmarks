@@ -1,0 +1,83 @@
+{
+"name": "global-bookmarks",
+  "displayName": "Global Bookmarks",
+  "description": "A VSCode extension to manage global bookmarks across files.",
+  "version": "1.0.0",
+  "publisher": "KayoRiccelo",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.toggleBookmark1",
+    "onCommand:extension.toggleBookmark2",
+    "onCommand:extension.toggleBookmark3",
+    "onCommand:extension.toggleBookmark4",
+    "onCommand:extension.toggleBookmark5",
+    "onCommand:extension.toggleBookmark6",
+    "onCommand:extension.toggleBookmark7",
+    "onCommand:extension.toggleBookmark8",
+    "onCommand:extension.toggleBookmark9",
+    "onCommand:extension.goToBookmark1",
+    "onCommand:extension.goToBookmark2",
+    "onCommand:extension.goToBookmark3",
+    "onCommand:extension.goToBookmark4",
+    "onCommand:extension.goToBookmark5",
+    "onCommand:extension.goToBookmark6",
+    "onCommand:extension.goToBookmark7",
+    "onCommand:extension.goToBookmark8",
+    "onCommand:extension.goToBookmark9"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+      "commands": [
+          { "command": "extension.toggleBookmark1", "title": "Toggle Bookmark 1" },
+          { "command": "extension.toggleBookmark2", "title": "Toggle Bookmark 2" },
+          { "command": "extension.toggleBookmark3", "title": "Toggle Bookmark 3" },
+          { "command": "extension.toggleBookmark4", "title": "Toggle Bookmark 4" },
+          { "command": "extension.toggleBookmark5", "title": "Toggle Bookmark 5" },
+          { "command": "extension.toggleBookmark6", "title": "Toggle Bookmark 6" },
+          { "command": "extension.toggleBookmark7", "title": "Toggle Bookmark 7" },
+          { "command": "extension.toggleBookmark8", "title": "Toggle Bookmark 8" },
+          { "command": "extension.toggleBookmark9", "title": "Toggle Bookmark 9" },
+          { "command": "extension.goToBookmark1", "title": "Go to Bookmark 1" },
+          { "command": "extension.goToBookmark2", "title": "Go to Bookmark 2" },
+          { "command": "extension.goToBookmark3", "title": "Go to Bookmark 3" },
+          { "command": "extension.goToBookmark4", "title": "Go to Bookmark 4" },
+          { "command": "extension.goToBookmark5", "title": "Go to Bookmark 5" },
+          { "command": "extension.goToBookmark6", "title": "Go to Bookmark 6" },
+          { "command": "extension.goToBookmark7", "title": "Go to Bookmark 7" },
+          { "command": "extension.goToBookmark8", "title": "Go to Bookmark 8" },
+          { "command": "extension.goToBookmark9", "title": "Go to Bookmark 9" }
+      ],
+      "keybindings": [
+          { "command": "extension.toggleBookmark1", "key": "ctrl+shift+1", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark1", "key": "ctrl+1", "when": "editorTextFocus" },
+          { "command": "extension.toggleBookmark2", "key": "ctrl+shift+2", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark2", "key": "ctrl+2", "when": "editorTextFocus" },
+          { "command": "extension.toggleBookmark3", "key": "ctrl+shift+3", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark3", "key": "ctrl+3", "when": "editorTextFocus" },
+          { "command": "extension.toggleBookmark4", "key": "ctrl+shift+4", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark4", "key": "ctrl+4", "when": "editorTextFocus" },
+          { "command": "extension.toggleBookmark5", "key": "ctrl+shift+5", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark5", "key": "ctrl+5", "when": "editorTextFocus" },
+          { "command": "extension.toggleBookmark6", "key": "ctrl+shift+6", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark6", "key": "ctrl+6", "when": "editorTextFocus" },
+          { "command": "extension.toggleBookmark7", "key": "ctrl+shift+7", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark7", "key": "ctrl+7", "when": "editorTextFocus" },
+          { "command": "extension.toggleBookmark8", "key": "ctrl+shift+8", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark8", "key": "ctrl+8", "when": "editorTextFocus" },
+          { "command": "extension.toggleBookmark9", "key": "ctrl+shift+9", "when": "editorTextFocus" },
+          { "command": "extension.goToBookmark9", "key": "ctrl+9", "when": "editorTextFocus" }
+      ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./out/cli.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "vscode": "^1.60.0"
+  }
+}
